@@ -12,7 +12,7 @@ import com.example.demo.uss.domain.User;
 @Component
 public class Proxy {
 	public static Consumer<String> print = System.out::print;
-	public  Function<Object, String> string = String::valueOf;
+	public  Function<Object, String> intToString = String::valueOf;
 	public  Function<String, Integer> strToInt = Integer::parseInt; 
 	
 	public Function<Double,Double> doubleabs = Math :: abs;
@@ -26,7 +26,9 @@ public class Proxy {
 	public static BiFunction<Double,Double, Double> doublemax = Math :: max;
 	public static BiFunction<Double,Double, Double> doublemin = Math :: min;
 	
-	public Supplier<Double> Rand = Math :: random;
+	public static Supplier<Double> Rand = Math :: random;
+	public static BiFunction<Integer,Integer,Integer> rangeRandom = (t,u) -> ((int)(Math.random()*(u-t))+t);
+			
 	public Function<Double, Double> rint = Math :: rint;
 	public Function<Double, Long> round = Math :: round;
 	

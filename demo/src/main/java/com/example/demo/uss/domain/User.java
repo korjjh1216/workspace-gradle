@@ -25,9 +25,7 @@ public class User  {
 	@Column(name = "password")
 	private String password;
 	
-	@Column(name = "authority")
-	private String authority;
-	
+		
 	@Column(name = "name")
 	private String name;
 	
@@ -39,5 +37,8 @@ public class User  {
 	
 	@Column(name = "gender")
 	private String gender;
+	
+	@Column(name = "regdate")
+	private String regdate;
 
 	}
