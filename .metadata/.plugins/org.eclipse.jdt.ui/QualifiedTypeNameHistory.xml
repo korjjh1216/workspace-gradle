@@ -6,4 +6,8 @@
     <fullyQualifiedTypeName name="com.example.demo.uss.service.AdminService"/>
     <fullyQualifiedTypeName name="com.example.demo.uss.repository.AdminRepository"/>
     <fullyQualifiedTypeName name="lombok.RequiredArgsConstructor"/>
+    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.GetMapping"/>
+    <fullyQualifiedTypeName name="java.lang.Object"/>
+    <fullyQualifiedTypeName name="org.springframework.stereotype.Repository"/>
+    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.CrossOrigin"/>
 </qualifiedTypeNameHistroy>

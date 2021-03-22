@@ -3,15 +3,16 @@ package com.example.demo.uss.domain;
 import java.util.ArrayList;
 import java.util.Collection;
 
+/*
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
-import org.springframework.security.core.userdetails.UserDetails;
+import org.springframework.security.core.userdetails.UserDetails;*/
 import org.springframework.stereotype.Component;
 
 import lombok.Data;
 
 @Component @Data
-public class UserDto  implements UserDetails {
+public class UserDto   {
 	private static final long serialVersionUID = 1L;
 	private String user_no;
 	private String password;
@@ -27,11 +28,12 @@ public class UserDto  implements UserDetails {
 	private boolean accountNonExpired;
 
 
-	@Override
+	/*@Override
 	public Collection<? extends GrantedAuthority> getAuthorities() {
         ArrayList<GrantedAuthority> auth = new ArrayList<GrantedAuthority>();
         auth.add(new SimpleGrantedAuthority(authority));
         return auth;
 	}
+	*/
 
 }

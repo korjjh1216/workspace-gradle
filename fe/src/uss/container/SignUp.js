@@ -3,30 +3,22 @@ import React from 'react'
 import axios from 'axios'
 
 const SignUp = () =>{
-  const insertMany = () =>{
-    alert(`더미데이터 입력`)
-    axios.get(`http://localhost:8080/auth/signUp`)
+  const insertMany = e =>{
+    e.preventDefault()
+    alert(`클릭1 : 더미데이터 입력`)
+    axios.get(`http://localhost:8080/auth/insertMany`)
     .then(res => {
-      console.log(`${res.data} 등록됨`)
+      alert(`클릭 2:${JSON.stringify(res.data)}`)
   })
     .catch(err => {
-      alert(`FAILURE`)
+      alert(`오류다 오류~ : ${err}`)
     })
   }
-  
-  const defaultCorsHeaders = {
-    "Cross-Origin-Embedder-Policy": "require-corp",
-    "Cross-Origin-Opener-Policy": "unsafe-none",
-    "Cross-Origin-Resource-Policy": "cross-origin"
-};
-
-
-
 
    return(<>
       <form style={{border:"1px solid #ccc"}}>
     <div className="container">
-      <h1>Sign Up</h1>
+      <h1>Sign Up</h1> <button onClick={insertMany}>더미 데이터 입력</button>
       <p>Please fill in this form to create an account.</p>
       <hr/>
       <label for="email"><b>Email</b></label>
@@ -41,7 +33,7 @@ const SignUp = () =>{
       <p>By creating an account you agree to our <a href="#" style={{color : "blue"}}>Terms & Privacy</a>.</p>
       <div className="clearfix">
           <button type="button" className="cancelbtn">Cancel</button>
-          <button type="submit" className="signupbtn" onClick={insertMany}>Sign Up</button>
+          <button type="submit" className="signupbtn">Sign Up</button>
       </div>
     </div>
     </form>

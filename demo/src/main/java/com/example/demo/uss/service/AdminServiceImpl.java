@@ -8,7 +8,7 @@ import lombok.RequiredArgsConstructor;
 
 @Service @RequiredArgsConstructor
 public class AdminServiceImpl implements AdminService  {
-	private final AdminRepository repo;
+	//private final AdminRepository repo;
 	
 
 }
