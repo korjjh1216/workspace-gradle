@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
+    <fullyQualifiedTypeName name="com.example.demo.uss.service.UserServiceImpl"/>
+    <fullyQualifiedTypeName name="com.example.demo.uss.repository.UserRepositoryImpl"/>
+    <fullyQualifiedTypeName name="com.example.demo.uss.service.AdminService"/>
+    <fullyQualifiedTypeName name="com.example.demo.uss.repository.AdminRepository"/>
+    <fullyQualifiedTypeName name="lombok.RequiredArgsConstructor"/>
+</qualifiedTypeNameHistroy>

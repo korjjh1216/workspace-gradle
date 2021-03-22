@@ -1,0 +1,27 @@
+package com.example.demo.uss.service;
+
+import com.example.demo.cmm.service.AbstractService;
+import com.example.demo.uss.domain.User;
+import com.example.demo.uss.domain.UserDto;
+import com.example.demo.uss.repository.UserRepository;
+import com.example.demo.uss.repository.UserRepositoryImpl;
+
+import java.util.List;
+import java.util.Optional;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.core.userdetails.UserDetails;
+import org.springframework.security.core.userdetails.UsernameNotFoundException;
+import org.springframework.stereotype.Service;
+
+@Service
+public class UserServiceImpl  implements UserService {
+    private final UserServiceImpl repo;
+    
+    @Autowired
+    public UserServiceImpl(UserRepositoryImpl repo) {
+    	this.repo = repo;
+    }
+	
+	
+}
