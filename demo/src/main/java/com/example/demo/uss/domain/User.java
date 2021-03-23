@@ -1,13 +1,8 @@
 package com.example.demo.uss.domain;
 
 import lombok.AllArgsConstructor;
-<<<<<<< HEAD
 import lombok.Builder;
 import lombok.Data;
-=======
-import lombok.Data;
-import lombok.NoArgsConstructor;
->>>>>>> 58233155e5cea5725b30941c9f03c8ec6e689b44
 
 import javax.persistence.*;
 
@@ -15,19 +10,11 @@ import javax.persistence.*;
 @Data
 @Entity
 @AllArgsConstructor
-<<<<<<< HEAD
-=======
-@NoArgsConstructor
->>>>>>> 58233155e5cea5725b30941c9f03c8ec6e689b44
 @Table(name="User")
 public class User  {
 	
 	@Id
-<<<<<<< HEAD
 	@GeneratedValue
-=======
-	@GeneratedValue(strategy = GenerationType.AUTO)
->>>>>>> 58233155e5cea5725b30941c9f03c8ec6e689b44
 	@Column(name="user_no")
 	private long userNo;
 	
@@ -53,7 +40,6 @@ public class User  {
 	@Column(name = "regdate")
 	private String regdate;
 
-<<<<<<< HEAD
 	@Builder
 	public User(String name, String password, String username, String email, String birthday, String gender,
 			String regdate) {
@@ -71,6 +57,3 @@ public class User  {
 	
 
 }
-=======
-	}
->>>>>>> 58233155e5cea5725b30941c9f03c8ec6e689b44
